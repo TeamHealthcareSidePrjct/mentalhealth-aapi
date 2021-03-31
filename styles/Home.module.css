@@ -1,3 +1,10 @@
+.background {
+  height: 1924px;
+  background-image: url("../public/homepagebackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
