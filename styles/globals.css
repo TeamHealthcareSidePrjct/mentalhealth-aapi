@@ -11,6 +11,34 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  font-family: Cormorant;
+  color: white;
+}
+
+p {
+  font-family: Open Sans;
+  color: white;
+}
+
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("/fonts/Cormorant/Cormorant-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans/OpenSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }

@@ -127,3 +127,41 @@
     flex-direction: column;
   }
 }
+
+/* Homepage Styles */
+
+.homepageheader {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 60px;
+}
+
+.homepagesubtext {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #e2e2e2;
+}
+
+.imagecolumn {
+  margin: 0 auto;
+}
+
+.ellipse {
+  left: 8.28%;
+  right: 85.93%;
+  top: 15.29%;
+  bottom: -3.53%;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(326.87deg, #f2f2f2 13.78%, rgba(242, 242, 242, 0.2) 93.08%);
+  mix-blend-mode: overlay;
+  backdrop-filter: blur(4px);
+}
