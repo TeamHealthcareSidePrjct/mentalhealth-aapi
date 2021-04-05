@@ -1,65 +1,104 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Navbar from "../components/nav";
+import Image from "next/image";
+import { Button, Row, Col } from "react-bootstrap";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.background}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="preload"
+          href="/fonts/Cormorant/Cormorant-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <title>Healthcare Mental Health AAPI</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+      <Navbar />
+      <div style={{ marginTop: "200px" }}></div>
+      <div className="mt-5 mb-5">
+        <Row style={{ marginLeft: "50px" }}>
+          <Col>
+            <h1 className={styles.homepageheader}>
+              It's time to reclaim the Asian American experience.
+            </h1>
+            <p className={styles.homepagesubtext}>
+              We created a tarot-inspired card deck to shed light on Asian
+              American and Pacific Islander experiences. AAPI folks and allies,
+              we welcome you to learn more in this safe space.
             </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+          </Col>
+          <Col className="d-flex justify-content-center">
+            <Image src="/rectangle.png" width={200} height={290} />
+          </Col>
+        </Row>
+      </div>
+      <div style={{ marginTop: "300px" }}></div>
+      <div className="mt-5 mb-5">
+        <Row>
+          <Col className="d-flex justify-content-center">
+            <h3>get started</h3>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="d-flex justify-content-center">
+            <h1 className="mx-auto">&#8595;</h1>
+          </Col>
+        </Row>
+      </div>
+      <div>
+        <Row style={{ marginLeft: "50px" }}>
+          <Col>
+            <h1>How to use our cards:</h1>
+          </Col>
+        </Row>
+      </div>
+      <span></span>
+      <div>
+        <Row className="mt-5">
+          <Col className="d-flex justify-content-center">
+            <Image src="/square.png" width={200} height={200} />
+          </Col>
+          <Col className="d-flex justify-content-center">
+            <Image src="/square.png" width={200} height={200} />
+          </Col>
+          <Col className="d-flex justify-content-center">
+            <Image src="/square.png" width={200} height={200} />
+          </Col>
+        </Row>
+        <Row className="mt-5">
+          <Col className="d-flex justify-content-center">
+            <Image src="/ellipse.png" width={77} height={75} />
+          </Col>
+          <Col className="d-flex justify-content-center">
+            <Image src="/ellipse.png" width={77} height={75} />
+          </Col>
+          <Col className="d-flex justify-content-center">
+            <Image src="/ellipse.png" width={77} height={75} />
+          </Col>
+        </Row>
+        <Row className="mt-5">
+          <Col className="d-flex justify-content-center">
+            <p>Pick a topic</p>
+          </Col>
+          <Col className="d-flex justify-content-center">
+            <p>Ready your card</p>
+          </Col>
+          <Col className="d-flex justify-content-center">
+            <p>Check out our resources</p>
+          </Col>
+        </Row>
+      </div>
+      <div style={{ marginTop: "175px" }}></div>
+      <div className="mt-5">
+        <Row>
+          <Col className="d-flex justify-content-center">
+            <Button variant="light">begin</Button>
+          </Col>
+        </Row>
+      </div>
     </div>
-  )
+  );
 }
