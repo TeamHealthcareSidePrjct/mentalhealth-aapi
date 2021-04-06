@@ -1,0 +1,61 @@
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Navbar from "../components/nav";
+import Image from "next/image";
+import { Button, Row, Col } from "react-bootstrap";
+
+export default function lovelyToMeetYou() {
+  return (
+    <div className={styles.background}>
+      <Head>
+        <link
+          rel="preload"
+          href="/fonts/Cormorant/Cormorant-Regular.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <title>Name</title>
+      </Head>
+      <Navbar />
+      <div style={{ marginTop: "200px" }}></div>
+      <div className="mt-5 mb-5">
+        <Row style={{ marginLeft: "50px" }}>
+          <Col>
+            <h1 className={styles.homepageheader}>
+              It's lovely to meet you, [name].
+            </h1>
+            <p className={styles.homepagesubtext}>
+              What would you like to explore?
+            </p>
+          </Col>
+        </Row>
+        <Row style={{ marginLeft: "50px" }}>
+          <Col></Col>
+        </Row>
+        <Row className="mt-5">
+          <Col className={styles.cards1}>
+            <Image src="/strength.png" width={300} height={541} />
+          </Col>
+          <Col className={styles.cards2}>
+            <Image src="/wheeloffortune.png" width={300} height={518} />
+          </Col>
+          <Col className={styles.cards3}>
+            <Image src="/temperance.png" width={300} height={520} />
+          </Col>
+        </Row>
+        <Row className="mt-5">
+          <Col className={styles.cards4}>
+            <Image src="/theworld.png" width={300} height={525} />
+          </Col>
+          <Col className={styles.cards5}>
+            <Image src="/kingofwands.png" width={300} height={534} />
+          </Col>
+          <Col className={styles.cards6}>
+            <Image src="/lovers.png" width={300} height={518} />
+          </Col>
+        </Row>
+      </div>
+      ;
+    </div>
+  );
+}

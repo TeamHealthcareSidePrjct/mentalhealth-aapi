@@ -165,3 +165,133 @@
   mix-blend-mode: overlay;
   backdrop-filter: blur(4px);
 }
+
+/* card styles*/
+
+.cards1 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 106px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+
+.cards2 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 284px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+.cards3 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 462px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+.cards4 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 640px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+.cards5 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 818px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+.cards6 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 996px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+.whatsyourname {
+  position: absolute;
+  width: 758px;
+  height: 58px;
+
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: rgba(241, 241, 241, 0.6);
+}
+
+.skipthisstep {
+  position: absolute;
+  width: 565px;
+  height: 22px;
+  left: 793px;
+  top: 769px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #e2e2e2;
+}
+
+.lovelytomeetyouname {
+  position: absolute;
+  width: 1068px;
+  height: 48px;
+  left: calc(50% - 1068px / 2 - 122px);
+  top: calc(50% - 48px / 2 - 245px);
+
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #f1f1f1;
+}
+
+.whatwouldyouliketoexplore {
+  position: absolute;
+  width: 405px;
+  height: 39px;
+  left: 10px;
+  top: 60px;
+
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+
+  /* identical to box height */
+
+  color: #f1f1f1;
+}

@@ -84,7 +84,7 @@ export default function Home() {
             <p>Pick a topic</p>
           </Col>
           <Col className="d-flex justify-content-center">
-            <p>Ready your card</p>
+            <p>Read your card</p>
           </Col>
           <Col className="d-flex justify-content-center">
             <p>Check out our resources</p>
