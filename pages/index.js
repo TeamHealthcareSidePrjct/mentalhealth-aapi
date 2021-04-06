@@ -70,13 +70,13 @@ export default function Home() {
         </Row>
         <Row className="mt-5">
           <Col className="d-flex justify-content-center">
-            <Image src="/ellipse.png" width={77} height={75} />
+            <Image src="/circlebutton1.png" width={77} height={75} />
           </Col>
           <Col className="d-flex justify-content-center">
-            <Image src="/ellipse.png" width={77} height={75} />
+            <Image src="/circlebutton2.png" width={77} height={75} />
           </Col>
           <Col className="d-flex justify-content-center">
-            <Image src="/ellipse.png" width={77} height={75} />
+            <Image src="/circlebutton3.png" width={77} height={75} />
           </Col>
         </Row>
         <Row className="mt-5">
@@ -92,10 +92,10 @@ export default function Home() {
         </Row>
       </div>
       <div style={{ marginTop: "175px" }}></div>
-      <div className="mt-5">
+      <div>
         <Row>
           <Col className="d-flex justify-content-center">
-            <Button variant="light">begin</Button>
+            <Image src="/Begin_Button.svg" width={108} height={108} />
           </Col>
         </Row>
       </div>
