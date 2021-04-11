@@ -34,24 +34,25 @@ export default function lovelyToMeetYou() {
         </Row>
         <Row className="mt-5">
           <Col className={styles.cards1}>
-            <Image src="/strength.png" width={300} height={541} />
+            <Image src="/The_Wheel_of_Shame.png" width={300} height={541} />
           </Col>
           <Col className={styles.cards2}>
-            <Image src="/wheeloffortune.png" width={300} height={518} />
+            <Image src="/The_Model_Minority.png" width={300} height={518} />
           </Col>
           <Col className={styles.cards3}>
-            <Image src="/temperance.png" width={300} height={520} />
+            <Image src="/The_Foreigner.png" width={300} height={520} />
           </Col>
-        </Row>
-        <Row className="mt-5">
           <Col className={styles.cards4}>
-            <Image src="/theworld.png" width={300} height={525} />
+            <Image src="/The_Yellow_Peril.png" width={300} height={525} />
           </Col>
           <Col className={styles.cards5}>
-            <Image src="/kingofwands.png" width={300} height={534} />
+            <Image src="/The_Great_Expectation.png" width={300} height={534} />
           </Col>
           <Col className={styles.cards6}>
-            <Image src="/lovers.png" width={300} height={518} />
+            <Image src="/The_Iron_Woman.png" width={300} height={534} />
+          </Col>
+          <Col className={styles.cards7}>
+            <Image src="/The_Unplanned_Card.png" width={300} height={518} />
           </Col>
         </Row>
       </div>

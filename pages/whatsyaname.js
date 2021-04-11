@@ -3,6 +3,10 @@ import styles from "../styles/Home.module.css";
 import Navbar from "../components/nav";
 import Image from "next/image";
 import { Button, Row, Col } from "react-bootstrap";
+import React from "react";
+
+// reactstrap components
+import { Input } from "reactstrap";
 
 export default function whatsyaname() {
   return (
@@ -27,14 +31,15 @@ export default function whatsyaname() {
             <h1 className={styles.homepageheader}>
               If it's alright, we'd love to call you by name.
             </h1>
-            <p className={styles.homepageheader}>What's your name?</p>
-          </Col>
-        </Row>
-        <Row style={{ marginLeft: "50px" }}>
-          <Col>
-            <p className={styles.homepagesubtext}>
-              To skip this step, just click on the arrow button.
-            </p>
+            <h1 className={styles.whatsyaname}>
+              <input
+                className={styles.whatsyaname}
+                type="text"
+                placeholder="What's your name?"
+              />
+            </h1>
+            <h1 className={styles.bar}></h1>
+            <button className={styles.skipthisstepbutton}></button>
           </Col>
         </Row>
       </div>
