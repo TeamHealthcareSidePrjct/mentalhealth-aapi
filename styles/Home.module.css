@@ -165,3 +165,182 @@
   mix-blend-mode: overlay;
   backdrop-filter: blur(4px);
 }
+
+.cards1 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 106px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+
+.cards2 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 284px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+.cards3 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 462px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+.cards4 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 640px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+.cards5 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 818px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+
+.cards6 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 996px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+
+.cards7 {
+  position: absolute;
+  width: 160px;
+  height: 240px;
+  left: 1175px;
+  top: 450px;
+
+  background: #c4c4c4;
+  border-radius: 12px;
+}
+
+.whatsyaname {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  text-align: center;
+  line-height: 453px;
+  height: 50px;
+  left: 400px;
+  right: 400px;
+  bottom: 389px;
+  font-family: Cormorant;
+  font-style: normal;
+
+  color: rgba(241, 241, 241, 0.6);
+}
+
+.skipthisstep {
+  position: absolute;
+  width: 565px;
+  height: 22px;
+  right: 100px;
+  top: 769px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  /* identical to box height */
+  text-align: center;
+
+  color: #e2e2e2;
+}
+
+.skipthisstepbutton {
+  /* ellipse */
+  position: absolute;
+  left: 2000px;
+  right: 100px;
+  top: 769px;
+
+  background: linear-gradient(
+    65.03deg,
+    #f2f2f2 11.85%,
+    rgba(242, 242, 242, 0.3) 90.31%
+  );
+  mix-blend-mode: overlay;
+  backdrop-filter: blur(4px);
+  /* arrow */
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0px;
+
+  /* Gray 5 */
+  border: 4px solid #e0e0e0;
+
+  /* Gray 5 */
+  border: 4px solid #e0e0e0;
+}
+
+.lovelytomeetyouname {
+  position: absolute;
+  width: 1068px;
+  height: 48px;
+  left: calc(50% - 1068px / 2 - 122px);
+  top: calc(50% - 48px / 2 - 245px);
+
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #f1f1f1;
+}
+
+.whatwouldyouliketoexplore {
+  position: absolute;
+  width: 405px;
+  height: 39px;
+  left: 10px;
+  top: 60px;
+
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+
+  /* identical to box height */
+
+  color: #f1f1f1;
+}
+.bar {
+  border: 2px solid #f1f1f1;
+  position: absolute;
+
+  width: 704.09px;
+  height: 0px;
+  left: 400px;
+  top: 400px;
+}
