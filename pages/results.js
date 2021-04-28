@@ -176,9 +176,11 @@ export default function PreResults() {
               <div>
                 <h1>Learn More</h1>
                 <div className="d-flex">
-                  <div>
-                    <Image src="/learnmoreAMHC.svg" width={140} height={80} />
-                  </div>
+                  <Link href="https://www.asianmhc.org/" passHref={true}>
+                    <div>
+                      <Image src="/learnmoreAMHC.svg" width={140} height={80} />
+                    </div>
+                  </Link>
                   <div className="pl-5">
                     <Link href="https://www.asianmhc.org/" passHref={true}>
                       <p className={styles.resourcestext}>
@@ -189,9 +191,11 @@ export default function PreResults() {
                   </div>
                 </div>
                 <div className="d-flex">
-                  <div>
-                    <Image src="/learnmoretry.svg" width={140} height={80} />
-                  </div>
+                  <Link href="https://youtu.be/14WUuya94QE" passHref={true}>
+                    <div>
+                      <Image src="/learnmoretry.svg" width={140} height={80} />
+                    </div>
+                  </Link>
                   <div className="pl-5">
                     <Link href="https://youtu.be/14WUuya94QE" passHref={true}>
                       <p className={styles.resourcestext}>
@@ -202,27 +206,34 @@ export default function PreResults() {
                   </div>
                 </div>
                 <div className="d-flex">
-                  <div>
-                    <Image
-                      src="/learnmorechitchat.svg"
-                      width={140}
-                      height={80}
-                    />
-                  </div>
+                  <Link href="https://www.thechitchaat.com/" passHref={true}>
+                    <div>
+                      <Image
+                        src="/learnmorechitchat.svg"
+                        width={140}
+                        height={80}
+                      />
+                    </div>
+                  </Link>
                   <div className="pl-5">
                     <Link href="https://www.thechitchaat.com/" passHref={true}>
                       <p className={styles.resourcestext}>
                         REPRESENTATION
                         <br />
-                        The Chit-Chaat: Culturally Appropriate Holiday Cards
+                        Chit-Chaat: Culturally Appropriate Holiday Cards
                       </p>
                     </Link>
                   </div>
                 </div>
                 <div className="d-flex">
-                  <div>
-                    <Image src="/learnmoreNYT.svg" width={140} height={80} />
-                  </div>
+                  <Link
+                    href="https://www.nytimes.com/interactive/2021/04/08/arts/asian-american-photos-love.html"
+                    passHref={true}
+                  >
+                    <div>
+                      <Image src="/learnmoreNYT.svg" width={140} height={80} />
+                    </div>
+                  </Link>
                   <div className="pl-5">
                     <Link
                       href="https://www.nytimes.com/interactive/2021/04/08/arts/asian-american-photos-love.html"
