@@ -180,10 +180,12 @@ export default function PreResults() {
                     <Image src="/learnmoreAMHC.svg" width={140} height={80} />
                   </div>
                   <div className="pl-5">
-                    <p className={styles.resourcestext}>
-                      MENTAL HEALTH <br />
-                      The Asian Mental Health Collective
-                    </p>
+                    <Link href="https://www.asianmhc.org/" passHref={true}>
+                      <p className={styles.resourcestext}>
+                        MENTAL HEALTH <br />
+                        The Asian Mental Health Collective
+                      </p>
+                    </Link>
                   </div>
                 </div>
                 <div className="d-flex">
@@ -191,10 +193,12 @@ export default function PreResults() {
                     <Image src="/learnmoretry.svg" width={140} height={80} />
                   </div>
                   <div className="pl-5">
-                    <p className={styles.resourcestext}>
-                      #STOPASIANHATE <br />
-                      The Try Guys: "Let's Talk About Anti-Asian Hate."
-                    </p>
+                    <Link href="https://youtu.be/14WUuya94QE" passHref={true}>
+                      <p className={styles.resourcestext}>
+                        #STOPASIANHATE <br />
+                        The Try Guys: "Let's Talk About Anti-Asian Hate."
+                      </p>
+                    </Link>
                   </div>
                 </div>
                 <div className="d-flex">
@@ -206,11 +210,13 @@ export default function PreResults() {
                     />
                   </div>
                   <div className="pl-5">
-                    <p className={styles.resourcestext}>
-                      REPRESENTATION
-                      <br />
-                      The Chit-Chaat: Culturally Appropriate Holiday Cards
-                    </p>
+                    <Link href="https://www.thechitchaat.com/" passHref={true}>
+                      <p className={styles.resourcestext}>
+                        REPRESENTATION
+                        <br />
+                        The Chit-Chaat: Culturally Appropriate Holiday Cards
+                      </p>
+                    </Link>
                   </div>
                 </div>
                 <div className="d-flex">
@@ -218,10 +224,15 @@ export default function PreResults() {
                     <Image src="/learnmoreNYT.svg" width={140} height={80} />
                   </div>
                   <div className="pl-5">
-                    <p className={styles.resourcestext}>
-                      ESSAY <br />
-                      The New York Times: Keeping Love Close
-                    </p>
+                    <Link
+                      href="https://www.nytimes.com/interactive/2021/04/08/arts/asian-american-photos-love.html"
+                      passHref={true}
+                    >
+                      <p className={styles.resourcestext}>
+                        ESSAY <br />
+                        The New York Times: Keeping Love Close
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>
