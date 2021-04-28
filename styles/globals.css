@@ -13,12 +13,14 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+li {
   font-family: Cormorant;
   color: white;
 }
 
-p {
+p,
+h4 {
   font-family: Open Sans;
   color: white;
 }
@@ -41,4 +43,12 @@ p {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+}
+
+/* FLIP CARD styles */
+.flipcard {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
