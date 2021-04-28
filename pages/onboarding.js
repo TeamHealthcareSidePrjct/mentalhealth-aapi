@@ -35,6 +35,7 @@ export default function Onboarding() {
           </h1>
         </Row>
         <div style={{ height: 160 }}></div>
+
         <Row>
           <div className="mx-auto">
             <input

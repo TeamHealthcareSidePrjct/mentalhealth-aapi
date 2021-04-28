@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/nav";
+
 import { Row, Col, Overlay, Tooltip } from "react-bootstrap";
 import Image from "next/image";
 import { useState, useRef } from "react";
@@ -12,6 +13,7 @@ export default function PreResults() {
   const [rotate, setRotate] = useState(false);
   const [show, setShow] = useState(false);
   const target = useRef(null);
+
 
   return (
     <div className={styles.gradientbackground}>
@@ -44,6 +46,7 @@ export default function PreResults() {
         >
           <div className={styles.flipcardfront}>
             <Image src="/cardwheelofshame.svg" width={333} height={500} />
+
           </div>
           <div className={styles.flipcardback}>
             <Image src="/blankcard.png" width={333} height={500} />
@@ -161,7 +164,10 @@ export default function PreResults() {
               exploring!
             </h4>
           </div>
+
           <Link href="/categories">
+
+
             <div className="pl-5" style={{ cursor: "pointer" }}>
               <h1 className={styles.rightarrow}>&#8594;</h1>
             </div>

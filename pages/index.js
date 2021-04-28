@@ -19,12 +19,12 @@ export default function Home() {
           <title>hyphenated</title>
         </Head>
         <Navbar />
+
         <div style={{ marginTop: "100px" }}></div>
         <div className="mt-5 mb-5">
           <Row style={{ paddingLeft: "50px" }}>
             <Col>
               <br />
-
               <h1 className={styles.homepageheader}>
                 It's time to reclaim the Asian American experience.
               </h1>
@@ -42,7 +42,9 @@ export default function Home() {
             </Col>
           </Row>
         </div>
+
         <div style={{ marginTop: "150px" }}></div>
+
         <div className="mt-5 mb-5">
           <Row>
             <Col className="d-flex justify-content-center">
@@ -56,9 +58,11 @@ export default function Home() {
           </Row>
         </div>
         <div>
+
           <Row style={{ paddingLeft: "50px" }}>
             <Col>
               <h2>Quest Instructions</h2>
+
             </Col>
           </Row>
         </div>
@@ -66,6 +70,7 @@ export default function Home() {
         <div>
           <Row className="mt-5">
             <Col className="d-flex justify-content-center">
+
               <Image src="/01.svg" width={189} height={48} />
             </Col>
             <Col className="d-flex justify-content-center">
@@ -73,10 +78,12 @@ export default function Home() {
             </Col>
             <Col className="d-flex justify-content-center">
               <Image src="/03.svg" width={342} height={61} />
+
             </Col>
           </Row>
           <Row className="mt-5">
             <Col className="d-flex justify-content-center">
+
               <Image src="/cardmodelminority.svg" width={200} height={133.33} />
             </Col>
             <Col className="d-flex justify-content-center">
@@ -89,6 +96,7 @@ export default function Home() {
                 height={224.43}
                 style={{ background: "transparent" }}
               />
+
             </Col>
           </Row>
         </div>

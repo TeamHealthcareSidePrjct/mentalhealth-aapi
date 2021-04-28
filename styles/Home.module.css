@@ -43,6 +43,7 @@
   margin-top: -65px;
   /* negative value of footer height */
   height: 65px;
+
   clear: both;
   background-color: transparent;
 }
