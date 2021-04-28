@@ -3,8 +3,8 @@
 }
 
 .background {
-  height: 1924px;
-  background-image: url("../public/homepagebackground.png");
+  height: 2021px;
+  background-image: url("../public/homepagebackground.svg");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: auto;
@@ -40,12 +40,21 @@
 .footer {
   position: relative;
   bottom: 0;
-  margin-top: -65px;
+  margin-top: -150px;
   /* negative value of footer height */
-  height: 65px;
-
+  height: 150px;
   clear: both;
   background-color: transparent;
+}
+
+.footertext {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #e2e2e2;
+  cursor: pointer;
 }
 
 .title a {
@@ -224,9 +233,5 @@
   border-radius: 100px;
   border: 1px solid rgba(106, 105, 194, 1);
   margin: 10px;
-  cursor: pointer;
-}
-
-.pointercursor {
   cursor: pointer;
 }

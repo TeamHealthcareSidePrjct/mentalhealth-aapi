@@ -58,11 +58,9 @@ export default function Home() {
           </Row>
         </div>
         <div>
-
           <Row style={{ paddingLeft: "50px" }}>
             <Col>
               <h2>Quest Instructions</h2>
-
             </Col>
           </Row>
         </div>
@@ -70,7 +68,6 @@ export default function Home() {
         <div>
           <Row className="mt-5">
             <Col className="d-flex justify-content-center">
-
               <Image src="/01.svg" width={189} height={48} />
             </Col>
             <Col className="d-flex justify-content-center">
@@ -78,12 +75,10 @@ export default function Home() {
             </Col>
             <Col className="d-flex justify-content-center">
               <Image src="/03.svg" width={342} height={61} />
-
             </Col>
           </Row>
           <Row className="mt-5">
             <Col className="d-flex justify-content-center">
-
               <Image src="/cardmodelminority.svg" width={200} height={133.33} />
             </Col>
             <Col className="d-flex justify-content-center">
@@ -96,7 +91,6 @@ export default function Home() {
                 height={224.43}
                 style={{ background: "transparent" }}
               />
-
             </Col>
           </Row>
         </div>
@@ -112,41 +106,36 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.footer}>
-        <Row>
-          <Col>
-            <div className="pl-4">
-              <Link href="mailto:hyphenated.team@gmail.com">
-                <p className={styles.pointercursor}>
-                  Contact us <br />
-                  hyphenated.team@gmail.com
-                </p>
-              </Link>
-            </div>
-          </Col>
-          <Col>
-            <span
-              style={{
-                fontFamily: "Cormorant",
-                color: "white",
-              }}
-            >
-              Follow us
-            </span>
-            <br />{" "}
-            <Image
-              src="/icontwitter.svg"
-              width={24}
-              height={24}
-              className={styles.pointercursor}
-            />
-          </Col>
-          <Col className={styles.pointercursor}>
-            <Link href="/onboarding">
-              <p>Resources</p>
+        <div
+          className="d-flex justify-content-between"
+          style={{ paddingLeft: "50px" }}
+        >
+          <div>
+            <Link href="mailto:hyphenated.team@gmail.com">
+              <p className={styles.footertext}>
+                Wanna get involved?
+                <br />
+                Contact us &#38; follow our socials.
+              </p>
             </Link>
-          </Col>
-          <p className="pr-5">&#169; 2021 Hyphenated</p>
-        </Row>
+            <Link href="mailto:hyphenated.team@gmail.com">
+              <p className={styles.footertext}>Email</p>
+            </Link>
+            <Link href="https://www.google.com" passHref={true}>
+              <p className={styles.footertext}>Twitter</p>
+            </Link>
+          </div>
+          <div style={{ paddingRight: "40px" }}>
+            <Link href="/onboarding">
+              <p className={styles.footertext}>About</p>
+            </Link>
+            <Link href="/onboarding">
+              <p className={styles.footertext}>Resources</p>
+            </Link>
+            <br />
+            <p className={styles.footertext}>&#169; 2021 Hyphenated</p>
+          </div>
+        </div>
       </div>
     </div>
   );

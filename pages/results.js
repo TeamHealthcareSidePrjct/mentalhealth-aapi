@@ -14,7 +14,6 @@ export default function PreResults() {
   const [show, setShow] = useState(false);
   const target = useRef(null);
 
-
   return (
     <div className={styles.gradientbackground}>
       <Head>
@@ -33,7 +32,7 @@ export default function PreResults() {
         style={{ textAlign: "center", display: showMe ? "block" : "none" }}
         className="pb-2"
       >
-        <h3>tap to flip!</h3>
+        <h3 style={{ display: rotate ? "none" : "block" }}>tap to flip!</h3>
       </div>
       <div>
         <div
@@ -46,7 +45,6 @@ export default function PreResults() {
         >
           <div className={styles.flipcardfront}>
             <Image src="/cardwheelofshame.svg" width={333} height={500} />
-
           </div>
           <div className={styles.flipcardback}>
             <Image src="/blankcard.png" width={333} height={500} />
@@ -166,8 +164,6 @@ export default function PreResults() {
           </div>
 
           <Link href="/categories">
-
-
             <div className="pl-5" style={{ cursor: "pointer" }}>
               <h1 className={styles.rightarrow}>&#8594;</h1>
             </div>
@@ -181,7 +177,7 @@ export default function PreResults() {
                 <h1>Learn More</h1>
                 <div className="d-flex">
                   <div>
-                    <Image src="/learnmoresquare.png" width={140} height={80} />
+                    <Image src="/learnmoreAMHC.svg" width={140} height={80} />
                   </div>
                   <div className="pl-5">
                     <p className={styles.resourcestext}>
@@ -192,34 +188,39 @@ export default function PreResults() {
                 </div>
                 <div className="d-flex">
                   <div>
-                    <Image src="/learnmoresquare.png" width={140} height={80} />
+                    <Image src="/learnmoretry.svg" width={140} height={80} />
                   </div>
                   <div className="pl-5">
                     <p className={styles.resourcestext}>
-                      MENTAL HEALTH <br />
-                      The Asian Mental Health Collective
+                      #STOPASIANHATE <br />
+                      The Try Guys: "Let's Talk About Anti-Asian Hate."
                     </p>
                   </div>
                 </div>
                 <div className="d-flex">
                   <div>
-                    <Image src="/learnmoresquare.png" width={140} height={80} />
+                    <Image
+                      src="/learnmorechitchat.svg"
+                      width={140}
+                      height={80}
+                    />
                   </div>
                   <div className="pl-5">
                     <p className={styles.resourcestext}>
-                      MENTAL HEALTH <br />
-                      The Asian Mental Health Collective
+                      REPRESENTATION
+                      <br />
+                      The Chit-Chaat: Culturally Appropriate Holiday Cards
                     </p>
                   </div>
                 </div>
                 <div className="d-flex">
                   <div>
-                    <Image src="/learnmoresquare.png" width={140} height={80} />
+                    <Image src="/learnmoreNYT.svg" width={140} height={80} />
                   </div>
                   <div className="pl-5">
                     <p className={styles.resourcestext}>
-                      MENTAL HEALTH <br />
-                      The Asian Mental Health Collective
+                      ESSAY <br />
+                      The New York Times: Keeping Love Close
                     </p>
                   </div>
                 </div>
@@ -229,7 +230,7 @@ export default function PreResults() {
               <div>
                 <TwitterTimelineEmbed
                   sourceType="timeline"
-                  screenName="_RudyBecker_"
+                  screenName="HyphenatedUs"
                   theme="dark"
                   options={{ height: 400 }}
                   noHeader
