@@ -19,10 +19,12 @@ export default function Home() {
           <title>hyphenated</title>
         </Head>
         <Navbar />
-        <div style={{ marginTop: "200px" }}></div>
+        <div style={{ marginTop: "100px" }}></div>
         <div className="mt-5 mb-5">
-          <Row style={{ marginLeft: "50px" }}>
+          <Row style={{ paddingLeft: "50px" }}>
             <Col>
+              <br />
+
               <h1 className={styles.homepageheader}>
                 It's time to reclaim the Asian American experience.
               </h1>
@@ -35,22 +37,12 @@ export default function Home() {
             </Col>
             <Col className="d-flex justify-content-center">
               <div>
-                <div style={{ position: "absolute" }}>
-                  <Image
-                    src="/indexcard2.png"
-                    width={200}
-                    height={300}
-                    style={{ position: "absolute" }}
-                  />
-                </div>
-                <div style={{ position: "absolute" }}>
-                  <Image src="/indexcard1.png" width={200} height={300} />
-                </div>
+                <Image src="/cardsethomepage.svg" width={280} height={333} />
               </div>
             </Col>
           </Row>
         </div>
-        <div style={{ marginTop: "200px" }}></div>
+        <div style={{ marginTop: "150px" }}></div>
         <div className="mt-5 mb-5">
           <Row>
             <Col className="d-flex justify-content-center">
@@ -64,9 +56,9 @@ export default function Home() {
           </Row>
         </div>
         <div>
-          <Row style={{ marginLeft: "50px" }}>
+          <Row style={{ paddingLeft: "50px" }}>
             <Col>
-              <h1>Quest Instructions</h1>
+              <h2>Quest Instructions</h2>
             </Col>
           </Row>
         </div>
@@ -74,28 +66,29 @@ export default function Home() {
         <div>
           <Row className="mt-5">
             <Col className="d-flex justify-content-center">
-              <p className={styles.abovecardtext}>Pick a topic</p>
+              <Image src="/01.svg" width={189} height={48} />
             </Col>
             <Col className="d-flex justify-content-center">
-              <p className={styles.abovecardtext}>Flip your card</p>
+              <Image src="/02.svg" width={236} height={48} />
             </Col>
             <Col className="d-flex justify-content-center">
-              <p className={styles.abovecardtext}>
-                Reveal your reading &amp;
-                <br />
-                share the experience!
-              </p>
+              <Image src="/03.svg" width={342} height={61} />
             </Col>
           </Row>
           <Row className="mt-5">
             <Col className="d-flex justify-content-center">
-              <Image src="/square.png" width={200} height={200} />
+              <Image src="/cardmodelminority.svg" width={200} height={133.33} />
             </Col>
             <Col className="d-flex justify-content-center">
-              <Image src="/square.png" width={200} height={200} />
+              <Image src="/cardquestionmark.svg" width={200} height={133.33} />
             </Col>
             <Col className="d-flex justify-content-center">
-              <Image src="/square.png" width={200} height={200} />
+              <Image
+                src="/cardbackandwand.svg"
+                width={226}
+                height={224.43}
+                style={{ background: "transparent" }}
+              />
             </Col>
           </Row>
         </div>
@@ -111,9 +104,41 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.footer}>
-        <p style={{ float: "right" }} className="mr-5">
-          &#169; 2021 Hyphenated
-        </p>
+        <Row>
+          <Col>
+            <div className="pl-4">
+              <Link href="mailto:hyphenated.team@gmail.com">
+                <p className={styles.pointercursor}>
+                  Contact us <br />
+                  hyphenated.team@gmail.com
+                </p>
+              </Link>
+            </div>
+          </Col>
+          <Col>
+            <span
+              style={{
+                fontFamily: "Cormorant",
+                color: "white",
+              }}
+            >
+              Follow us
+            </span>
+            <br />{" "}
+            <Image
+              src="/icontwitter.svg"
+              width={24}
+              height={24}
+              className={styles.pointercursor}
+            />
+          </Col>
+          <Col className={styles.pointercursor}>
+            <Link href="/onboarding">
+              <p>Resources</p>
+            </Link>
+          </Col>
+          <p className="pr-5">&#169; 2021 Hyphenated</p>
+        </Row>
       </div>
     </div>
   );

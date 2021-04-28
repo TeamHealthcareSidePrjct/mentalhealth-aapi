@@ -1,15 +1,17 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/nav";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Overlay, Tooltip } from "react-bootstrap";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 export default function PreResults() {
   const [showMe, setShowMe] = useState(true);
   const [rotate, setRotate] = useState(false);
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
 
   return (
     <div className={styles.gradientbackground}>
@@ -41,7 +43,7 @@ export default function PreResults() {
           onClick={() => setRotate(!rotate)}
         >
           <div className={styles.flipcardfront}>
-            <Image src="/the_foreigner.png" width={333} height={500} />
+            <Image src="/cardwheelofshame.svg" width={333} height={500} />
           </div>
           <div className={styles.flipcardback}>
             <Image src="/blankcard.png" width={333} height={500} />
@@ -49,7 +51,7 @@ export default function PreResults() {
         </div>
         <div
           style={{
-            display: showMe ? "block" : "none",
+            display: showMe && rotate ? "block" : "none",
             float: "right",
             height: "500px",
           }}
@@ -65,7 +67,6 @@ export default function PreResults() {
           </div>
         </div>
       </div>
-
       <div
         style={{
           display: showMe ? "none" : "block",
@@ -73,7 +74,7 @@ export default function PreResults() {
       >
         <div className="d-flex justify-content-center">
           <div className="mr-5">
-            <Image src="/the_foreigner.png" width={333} height={500} />
+            <Image src="/cardwheelofshame.svg" width={333} height={500} />
           </div>
           <div className="ml-5">
             <Image src="/blankcard.png" width={333} height={500} />
@@ -88,31 +89,71 @@ export default function PreResults() {
           </div>
         </div>
         <div className="d-flex justify-content-end">
-          <div className="mx-auto my-auto">
+          <div className="d-flex justify-content-end mx-auto my-auto">
             <div className={styles.socialshare}>
               <div className="d-flex justify-content-center ">
                 <div style={{ height: "75px" }} className="mx-2">
-                  <div className="mt-4">
-                    {" "}
-                    <Image src="/facebookshare.png" width={30} height={30} />
-                  </div>
+                  <Link
+                    href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.google.com"
+                    passHref={true}
+                  >
+                    <div className="mt-4">
+                      {" "}
+                      <Image src="/facebookshare.png" width={30} height={30} />
+                    </div>
+                  </Link>
                 </div>
                 <div style={{ height: "75px" }} className="mx-2">
-                  <div className="mt-4">
-                    {" "}
-                    <Image src="/twittershare.png" width={30} height={30} />
-                  </div>
+                  <Link
+                    href="https://twitter.com/intent/tweet?url=www.google.com&text="
+                    passHref={true}
+                  >
+                    <div className="mt-4">
+                      {" "}
+                      <Image src="/twittershare.png" width={30} height={30} />
+                    </div>
+                  </Link>
                 </div>
                 <div style={{ height: "75px" }} className="mx-2">
-                  <div className="mt-4">
+                  <div
+                    className="mt-4"
+                    ref={target}
+                    onClick={() =>
+                      navigator.clipboard.writeText("www.google.com")
+                    }
+                  >
                     {" "}
-                    <Image src="/socialshare.png" width={30} height={30} />
+                    <Image
+                      onClick={() => setShow(!show)}
+                      src="/socialshare.png"
+                      width={30}
+                      height={30}
+                    />
+                    <Overlay
+                      target={target.current}
+                      show={show}
+                      placement="bottom"
+                    >
+                      {(props) => (
+                        <Tooltip id="overlay-example" {...props}>
+                          Copied!
+                        </Tooltip>
+                      )}
+                    </Overlay>
                   </div>
                 </div>
               </div>
             </div>
+            <div className={styles.socialshare}>
+              <div className="d-flex justify-content-center ">
+                <Link href="https://www.google.com" passHref={true}>
+                  <div className="mt-3">
+                    <h2>Resources</h2>
+                  </div>
+                </Link>
+              </div>
+            </div>
           </div>
-
           <div className="my-auto">
             <h4>
               Continue
@@ -120,7 +161,7 @@ export default function PreResults() {
               exploring!
             </h4>
           </div>
-          <Link href="/onboarding">
+          <Link href="/categories">
             <div className="pl-5" style={{ cursor: "pointer" }}>
               <h1 className={styles.rightarrow}>&#8594;</h1>
             </div>
@@ -130,49 +171,51 @@ export default function PreResults() {
         <div>
           <Row style={{ paddingLeft: "50px", paddingRight: "50px" }}>
             <Col>
-              <h1>Learn More</h1>
-              <div className="d-flex">
-                <div>
-                  <Image src="/learnmoresquare.png" width={140} height={80} />
+              <div>
+                <h1>Learn More</h1>
+                <div className="d-flex">
+                  <div>
+                    <Image src="/learnmoresquare.png" width={140} height={80} />
+                  </div>
+                  <div className="pl-5">
+                    <p className={styles.resourcestext}>
+                      MENTAL HEALTH <br />
+                      The Asian Mental Health Collective
+                    </p>
+                  </div>
                 </div>
-                <div className="pl-5">
-                  <p className={styles.resourcestext}>
-                    MENTAL HEALTH <br />
-                    The Asian Mental Health Collective
-                  </p>
+                <div className="d-flex">
+                  <div>
+                    <Image src="/learnmoresquare.png" width={140} height={80} />
+                  </div>
+                  <div className="pl-5">
+                    <p className={styles.resourcestext}>
+                      MENTAL HEALTH <br />
+                      The Asian Mental Health Collective
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="d-flex">
-                <div>
-                  <Image src="/learnmoresquare.png" width={140} height={80} />
+                <div className="d-flex">
+                  <div>
+                    <Image src="/learnmoresquare.png" width={140} height={80} />
+                  </div>
+                  <div className="pl-5">
+                    <p className={styles.resourcestext}>
+                      MENTAL HEALTH <br />
+                      The Asian Mental Health Collective
+                    </p>
+                  </div>
                 </div>
-                <div className="pl-5">
-                  <p className={styles.resourcestext}>
-                    MENTAL HEALTH <br />
-                    The Asian Mental Health Collective
-                  </p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div>
-                  <Image src="/learnmoresquare.png" width={140} height={80} />
-                </div>
-                <div className="pl-5">
-                  <p className={styles.resourcestext}>
-                    MENTAL HEALTH <br />
-                    The Asian Mental Health Collective
-                  </p>
-                </div>
-              </div>
-              <div className="d-flex">
-                <div>
-                  <Image src="/learnmoresquare.png" width={140} height={80} />
-                </div>
-                <div className="pl-5">
-                  <p className={styles.resourcestext}>
-                    MENTAL HEALTH <br />
-                    The Asian Mental Health Collective
-                  </p>
+                <div className="d-flex">
+                  <div>
+                    <Image src="/learnmoresquare.png" width={140} height={80} />
+                  </div>
+                  <div className="pl-5">
+                    <p className={styles.resourcestext}>
+                      MENTAL HEALTH <br />
+                      The Asian Mental Health Collective
+                    </p>
+                  </div>
                 </div>
               </div>
             </Col>
@@ -183,6 +226,8 @@ export default function PreResults() {
                   screenName="_RudyBecker_"
                   theme="dark"
                   options={{ height: 400 }}
+                  noHeader
+                  noFooter
                 />
               </div>
             </Col>

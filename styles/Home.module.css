@@ -40,9 +40,9 @@
 .footer {
   position: relative;
   bottom: 0;
-  margin-top: -80px;
+  margin-top: -65px;
   /* negative value of footer height */
-  height: 80px;
+  height: 65px;
   clear: both;
   background-color: transparent;
 }
@@ -222,4 +222,10 @@
   height: 75px;
   border-radius: 100px;
   border: 1px solid rgba(106, 105, 194, 1);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.pointercursor {
+  cursor: pointer;
 }
