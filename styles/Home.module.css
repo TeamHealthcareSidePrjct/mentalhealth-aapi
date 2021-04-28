@@ -1,8 +1,22 @@
+.wrap {
+  min-height: 100%;
+}
+
 .background {
   height: 1924px;
   background-image: url("../public/homepagebackground.png");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: auto;
+  padding-bottom: 180px;
+}
+.onboardinggradientbackground {
+  background: linear-gradient(180deg, #00021c 0%, #0b0e4b 100%);
+  height: 1000px;
+}
+.gradientbackground {
+  background: linear-gradient(180deg, #00021c 0%, #0b0e4b 100%);
+  height: 1300px;
 }
 
 .container {
@@ -24,22 +38,13 @@
 }
 
 .footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  bottom: 0;
+  margin-top: -80px;
+  /* negative value of footer height */
+  height: 80px;
+  clear: both;
+  background-color: transparent;
 }
 
 .title a {
@@ -87,40 +92,6 @@
   margin-top: 3rem;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -164,4 +135,91 @@
     linear-gradient(326.87deg, #f2f2f2 13.78%, rgba(242, 242, 242, 0.2) 93.08%);
   mix-blend-mode: overlay;
   backdrop-filter: blur(4px);
+}
+
+.abovecardtext {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #e3e3e8;
+}
+
+/* FLIP CARD styles */
+.flipcard {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flipcardinner {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 1.9s;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.flipcardfront,
+.flipcardback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flipcardfront {
+  background-color: transparent;
+  backface-visibility: hidden;
+}
+
+.flipcardback {
+  background-color: transparent;
+  transform: rotateY(180deg) translateZ(1px);
+  backface-visibility: hidden;
+}
+
+/* Onboarding & Categories Styles */
+
+.input {
+  width: 704px;
+  height: 58px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.input::placeholder,
+.input[type="text"] {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  color: rgba(241, 241, 241, 0.6);
+}
+
+.rightarrow {
+  font-size: 80px;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.resourcestext {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #f1f1f1;
+}
+
+.socialshare {
+  width: 175px;
+  height: 75px;
+  border-radius: 100px;
+  border: 1px solid rgba(106, 105, 194, 1);
 }
