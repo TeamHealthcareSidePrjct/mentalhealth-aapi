@@ -22,6 +22,78 @@ export default function Categories() {
       <Navbar />
       <div style={{ height: "100px" }}></div>
       <div style={{ marginLeft: "50px" }}></div>
+      <div style={{ marginLeft: "50px" }}>
+        <span>
+          <h1>What would you like to explore?</h1>
+        </span>
+        <div style={{ height: "80px" }}></div>
+        <div className="d-flex justify-content-center">
+          <div
+            className={styles.zoom}
+            style={{ paddingRight: "5px", paddingLeft: "5px" }}
+          >
+            <Link href="/results">
+              <Image src="/blankcard.png" width={160} height={240} />
+            </Link>
+          </div>
+          <div
+            className={styles.zoom}
+            style={{ paddingRight: "5px", paddingLeft: "5px" }}
+          >
+            <Link href="/results">
+              <Image src="/blankcard.png" width={160} height={240} />
+            </Link>
+          </div>
+          <div
+            className={styles.zoom}
+            style={{ paddingRight: "5px", paddingLeft: "5px" }}
+          >
+            <Link href="/results">
+              <Image src="/blankcard.png" width={160} height={240} />
+            </Link>
+          </div>
+          <div
+            className={styles.zoom}
+            style={{ paddingRight: "5px", paddingLeft: "5px" }}
+          >
+            <Link href="/results">
+              <Image src="/blankcard.png" width={160} height={240} />
+            </Link>
+          </div>
+          <div
+            className={styles.zoom}
+            style={{ paddingRight: "5px", paddingLeft: "5px" }}
+          >
+            <Link href="/results">
+              <Image src="/blankcard.png" width={160} height={240} />
+            </Link>
+          </div>
+          <div
+            className={styles.zoom}
+            style={{ paddingRight: "5px", paddingLeft: "5px" }}
+          >
+            <Link href="/results">
+              <Image src="/blankcard.png" width={160} height={240} />
+            </Link>
+          </div>
+          <div
+            className={styles.zoom}
+            style={{ paddingRight: "5px", paddingLeft: "5px" }}
+          >
+            <Link href="/results">
+              <Image src="/blankcard.png" width={160} height={240} />
+            </Link>
+          </div>
+          <div
+            className={styles.zoom}
+            style={{ paddingRight: "5px", paddingLeft: "5px" }}
+          >
+            <Link href="/results">
+              <Image src="/blankcard.png" width={160} height={240} />
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

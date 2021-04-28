@@ -34,7 +34,8 @@ export default function Onboarding() {
             Remain a stranger or share your name, it's up to you.
           </h1>
         </Row>
-        <div style={{ height: "160px" }}></div>
+        <div style={{ height: 160 }}></div>
+
         <Row>
           <div className="mx-auto">
             <input
@@ -66,7 +67,7 @@ export default function Onboarding() {
       </div>
       <div style={{ marginLeft: "50px", display: hide ? "none" : "block" }}>
         <span>
-          <h1>It's lovely to meet you, {name}.</h1>
+          <h1>It's lovely to meet you, {name || "Stranger"}.</h1>
         </span>
         <span>
           <h2>What would you like to explore?</h2>
