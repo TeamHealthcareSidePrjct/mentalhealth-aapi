@@ -130,7 +130,7 @@ export default function Home() {
             </Link>
           </div>
           <div style={{ paddingRight: "40px" }}>
-            <Link href="/onboarding">
+            <Link href="/about">
               <p className={styles.footertext}>About</p>
             </Link>
             <Link
