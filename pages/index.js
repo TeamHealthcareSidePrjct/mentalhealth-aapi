@@ -79,7 +79,11 @@ export default function Home() {
           </Row>
           <Row className="mt-5">
             <Col className="d-flex justify-content-center">
-              <Image src="/cardmodelminority.svg" width={200} height={133.33} />
+              <Image
+                src="/cardmodelminorityback.svg"
+                width={200}
+                height={133.33}
+              />
             </Col>
             <Col className="d-flex justify-content-center">
               <Image src="/cardquestionmark.svg" width={200} height={133.33} />
