@@ -78,7 +78,7 @@ export default function Onboarding() {
             className={styles.zoom}
             style={{ paddingRight: "5px", paddingLeft: "5px" }}
           >
-            <Link href="/results">
+            <Link href="/modelminority">
               <Image
                 src="/cardmodelminorityback.svg"
                 width={160}
