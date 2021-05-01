@@ -2,6 +2,13 @@
   min-height: 100%;
 }
 
+.aboutwrap {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
 .background {
   height: 2021px;
   background-image: url("../public/homepagebackground.svg");
@@ -13,6 +20,14 @@
 .onboardinggradientbackground {
   background: linear-gradient(180deg, #00021c 0%, #0b0e4b 100%);
   height: 1000px;
+}
+.aboutbackground {
+  background-image: url("../public/aboutpagebackground.svg");
+  height: 1740px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+  padding-bottom: 180px;
 }
 .gradientbackground {
   background: linear-gradient(180deg, #00021c 0%, #0b0e4b 100%);
@@ -45,6 +60,13 @@
   height: 150px;
   clear: both;
   background-color: transparent;
+}
+
+.aboutfooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 
 .footertext {

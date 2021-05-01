@@ -16,7 +16,7 @@ export default function Home() {
             as="font"
             crossOrigin=""
           />
-          <title>hyphenated</title>
+          <title>Hyphenated</title>
         </Head>
         <Navbar />
 
@@ -121,7 +121,7 @@ export default function Home() {
             <Link href="mailto:hyphenated.team@gmail.com">
               <p className={styles.footertext}>Email</p>
             </Link>
-            <Link href="https://www.google.com" passHref={true}>
+            <Link href="https://twitter.com/HyphenatedApp" passHref={true}>
               <p className={styles.footertext}>Twitter</p>
             </Link>
           </div>
@@ -129,7 +129,10 @@ export default function Home() {
             <Link href="/onboarding">
               <p className={styles.footertext}>About</p>
             </Link>
-            <Link href="/onboarding">
+            <Link
+              href="https://www.notion.so/2f24c8dac5d04847b34520c42174e6b7?v=a7e69cbb048840cf80bb9601cb2fb9f7"
+              passHref={true}
+            >
               <p className={styles.footertext}>Resources</p>
             </Link>
             <br />

@@ -95,7 +95,7 @@ export default function PreResults() {
               <div className="d-flex justify-content-center ">
                 <div style={{ height: "75px" }} className="mx-2">
                   <Link
-                    href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.google.com"
+                    href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.hyphenated.app"
                     passHref={true}
                   >
                     <div className="mt-4">
@@ -106,7 +106,7 @@ export default function PreResults() {
                 </div>
                 <div style={{ height: "75px" }} className="mx-2">
                   <Link
-                    href="https://twitter.com/intent/tweet?url=www.google.com&text="
+                    href="https://twitter.com/intent/tweet?url=www.hyphenated.app&text="
                     passHref={true}
                   >
                     <div className="mt-4">
@@ -120,7 +120,7 @@ export default function PreResults() {
                     className="mt-4"
                     ref={target}
                     onClick={() =>
-                      navigator.clipboard.writeText("www.google.com")
+                      navigator.clipboard.writeText("www.hyphenated.app")
                     }
                   >
                     {" "}
@@ -147,7 +147,10 @@ export default function PreResults() {
             </div>
             <div className={styles.socialshare}>
               <div className="d-flex justify-content-center ">
-                <Link href="https://www.google.com" passHref={true}>
+                <Link
+                  href="https://www.notion.so/2f24c8dac5d04847b34520c42174e6b7?v=a7e69cbb048840cf80bb9601cb2fb9f7"
+                  passHref={true}
+                >
                   <div className="mt-3">
                     <h2>Resources</h2>
                   </div>
@@ -252,7 +255,7 @@ export default function PreResults() {
               <div>
                 <TwitterTimelineEmbed
                   sourceType="timeline"
-                  screenName="HyphenatedUs"
+                  screenName="HyphenatedApp"
                   theme="dark"
                   options={{ height: 400 }}
                   noHeader

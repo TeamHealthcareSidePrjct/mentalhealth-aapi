@@ -79,63 +79,59 @@ export default function Onboarding() {
             style={{ paddingRight: "5px", paddingLeft: "5px" }}
           >
             <Link href="/results">
-              <Image src="/blankcard.png" width={160} height={240} />
+              <Image
+                src="/cardmodelminorityback.svg"
+                width={160}
+                height={240}
+              />
             </Link>
           </div>
           <div
             className={styles.zoom}
             style={{ paddingRight: "5px", paddingLeft: "5px" }}
           >
-            <Link href="/results">
-              <Image src="/blankcard.png" width={160} height={240} />
+            <Link href="/greatexpectation">
+              <Image
+                src="/cardthegreatexpectationback.svg"
+                width={160}
+                height={240}
+              />
             </Link>
           </div>
           <div
             className={styles.zoom}
             style={{ paddingRight: "5px", paddingLeft: "5px" }}
           >
-            <Link href="/results">
-              <Image src="/blankcard.png" width={160} height={240} />
+            <Link href="/wheelofshame">
+              <Image src="/cardwheelofshameback.svg" width={160} height={240} />
             </Link>
           </div>
           <div
             className={styles.zoom}
             style={{ paddingRight: "5px", paddingLeft: "5px" }}
           >
-            <Link href="/results">
-              <Image src="/blankcard.png" width={160} height={240} />
+            <Link href="/foreigner">
+              <Image src="/cardforeignerback.svg" width={160} height={240} />
             </Link>
           </div>
           <div
             className={styles.zoom}
             style={{ paddingRight: "5px", paddingLeft: "5px" }}
           >
-            <Link href="/results">
-              <Image src="/blankcard.png" width={160} height={240} />
+            <Link href="/yellowperil">
+              <Image
+                src="/cardtheyellowperilback.svg"
+                width={160}
+                height={240}
+              />
             </Link>
           </div>
           <div
             className={styles.zoom}
             style={{ paddingRight: "5px", paddingLeft: "5px" }}
           >
-            <Link href="/results">
-              <Image src="/blankcard.png" width={160} height={240} />
-            </Link>
-          </div>
-          <div
-            className={styles.zoom}
-            style={{ paddingRight: "5px", paddingLeft: "5px" }}
-          >
-            <Link href="/results">
-              <Image src="/blankcard.png" width={160} height={240} />
-            </Link>
-          </div>
-          <div
-            className={styles.zoom}
-            style={{ paddingRight: "5px", paddingLeft: "5px" }}
-          >
-            <Link href="/results">
-              <Image src="/blankcard.png" width={160} height={240} />
+            <Link href="/ironwoman">
+              <Image src="/cardtheironwomanback.svg" width={160} height={240} />
             </Link>
           </div>
         </div>
