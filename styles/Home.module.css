@@ -258,3 +258,13 @@
   margin: 10px;
   cursor: pointer;
 }
+
+.navbarstitlestyles {
+  font-family: Cormorant;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 48px;
+  color: #e2e2e2;
+  padding-left: 30px;
+}
