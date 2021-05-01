@@ -19,14 +19,14 @@
 }
 .onboardinggradientbackground {
   background: linear-gradient(180deg, #00021c 0%, #0b0e4b 100%);
-  height: 1000px;
+  height: 100vh;
 }
 .aboutbackground {
   background-image: url("../public/aboutpagebackground.svg");
   height: 1740px;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: auto;
+  /* overflow: auto; */
   padding-bottom: 180px;
 }
 .gradientbackground {

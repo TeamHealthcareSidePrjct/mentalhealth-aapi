@@ -115,14 +115,14 @@ export default function Home() {
           style={{ paddingLeft: "50px" }}
         >
           <div>
-            <Link href="mailto:hyphenated.team@gmail.com">
+            <Link href="mailto:teamhealthcaresideprjct@gmail.com">
               <p className={styles.footertext}>
                 Wanna get involved?
                 <br />
                 Contact us &#38; follow our socials.
               </p>
             </Link>
-            <Link href="mailto:hyphenated.team@gmail.com">
+            <Link href="mailto:teamhealthcaresideprjct@gmail.com">
               <p className={styles.footertext}>Email</p>
             </Link>
             <Link href="https://twitter.com/HyphenatedApp" passHref={true}>

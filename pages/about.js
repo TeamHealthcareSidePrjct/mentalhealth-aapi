@@ -17,21 +17,21 @@ export default function About() {
           <title>Hyphenated</title>
         </Head>
         <Navbar />
-        {/* <div style={{ height: 1500 }}></div> */}
+        <div style={{ height: 1740 }}></div>
         <div className={styles.aboutfooter}>
           <div
             className="d-flex justify-content-between"
             style={{ paddingLeft: "50px" }}
           >
             <div>
-              <Link href="mailto:hyphenated.team@gmail.com">
+              <Link href="mailto:teamhealthcaresideprjct@gmail.com">
                 <p className={styles.footertext}>
                   Wanna get involved?
                   <br />
                   Contact us &#38; follow our socials.
                 </p>
               </Link>
-              <Link href="mailto:hyphenated.team@gmail.com">
+              <Link href="mailto:teamhealthcaresideprjct@gmail.com">
                 <p className={styles.footertext}>Email</p>
               </Link>
               <Link href="https://twitter.com/HyphenatedApp" passHref={true}>

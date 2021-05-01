@@ -1,11 +1,8 @@
 import Navbar from "../components/nav";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import NameWelcome from "../components/namewelcome";
-import { Row, Col } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import { useAppContext } from "../context/state";
 
 export default function Categories() {
   return (
