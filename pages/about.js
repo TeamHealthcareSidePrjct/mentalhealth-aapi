@@ -17,7 +17,6 @@ export default function About() {
           <title>Hyphenated</title>
         </Head>
         <Navbar />
-        <div style={{ height: 1740 }}></div>
         <div className={styles.aboutfooter}>
           <div
             className="d-flex justify-content-between"

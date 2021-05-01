@@ -52,7 +52,7 @@ export default function Onboarding() {
         <div className="d-flex justify-content-end">
           <div className="my-auto">
             <h4>
-              Don't worry, this info isnt stored! <br /> To skip, just click on
+              Don't worry, this info isn't stored! <br /> To skip, just click on
               the arrow button.
             </h4>
           </div>
